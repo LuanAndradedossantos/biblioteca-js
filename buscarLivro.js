@@ -1,7 +1,7 @@
-import { livros } from "./dadosLivros.js";
+import { dadosLivros } from "./dadosLivros.js";
 
 export function buscarLivro(titulo) { // função que busca um livro pelo título no array de livros.
-    const livro = livros.find( // percorre o array de livros e retorna o primeiro livro que corresponde ao título digitado pelo usuário.
+    const livro = dadosLivros.find( // percorre o array de livros e retorna o primeiro livro que corresponde ao título digitado pelo usuário.
         livro => livro.titulo.toLowerCase() === titulo.toLowerCase() // compara o título do livro com o título digitado pelo usuário, ignorando maiúsculas e minúsculas.
     );
 

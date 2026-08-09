@@ -1,4 +1,5 @@
 import { dadosLivros } from './dadosLivros.js';
+import { exibirLivro } from './listarLivros.js';
 
 export function listarDisponiveis() {
   console.log("\n=== LIVROS DISPONÍVEIS ===");
@@ -9,7 +10,7 @@ export function listarDisponiveis() {
     return;
   }
 
-  disponiveis.forEach((livro) => {
-    // exibição
-  });
-}
+  disponiveis.forEach((livro, indice) => {
+        exibirLivro(livro, indice);
+    });
+  }
